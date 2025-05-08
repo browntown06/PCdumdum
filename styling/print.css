@@ -1,0 +1,23 @@
+/* print.css */
+
+/* Defines the styles for printing the webpage */
+
+body {
+  font-family: serif;
+  background: none;
+  color: #000;
+}
+
+header, nav, footer {
+  display: none;
+}
+
+main {
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+img, video {
+  display: none;
+}
