@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Comparison between AMD and Nvidia graphics cards for beginners building PCs." />
+  <meta name="author" content="Ben Brown" />
+  <meta name="date" content="2025-05-08" />
+  
+  <!-- Page Title -->
+  <title>AMD vs Nvidia - Simple PC Build Guide</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="normalize.css"> <!-- Normalize CSS for consistent styling -->
+  <link rel="stylesheet" href="styling/styles.css" /> <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styling/print.css" media="print" /> <!-- Print-specific styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slicknav/1.0.10/slicknav.min.css"> <!-- SlickNav for responsive navigation -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio autoplay loop hidden>
+    <source src="audio/boogie.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Header Section -->
+  <header>
+    <h1>Simple PC Build Guide</h1>
+    <nav id="menu">
+      <ul>
+        <!-- Navigation Links -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gpus.html">AMD vs Nvidia</a></li>
+        <li><a href="cpus.html">AMD vs Intel</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="buy.html">Where to Buy</a></li>
+        <li><a href="contact.html">Questions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <!-- GPU Comparison Section -->
+      <h2>AMD vs Nvidia (GPUs)</h2>
+      <p>When choosing a GPU, AMD and Nvidia offer compelling options for different needs. Here's a basic comparison:</p>
+      
+      <!-- Comparison Table -->
+      <table>
+        <thead>
+          <tr>
+            <th>Feature</th>
+            <th>AMD</th>
+            <th>Nvidia</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Budget Options</td>
+            <td>Good performance for value</td>
+            <td>Higher price, polished features</td>
+          </tr>
+          <tr>
+            <td>Ray Tracing</td>
+            <td>Improving steadily</td>
+            <td>Advanced and well-supported</td>
+          </tr>
+          <tr>
+            <td>Software</td>
+            <td>Adrenalin Suite</td>
+            <td>GeForce Experience</td>
+          </tr>
+        </tbody>
+      </table>
+      
+      <!-- Additional Information -->
+      <p>If you're gaming at 1080p, AMD might save you money. If you're video editing or using AI features, Nvidia could be better.</p>
+      
+      <!-- GPU Comparison Image -->
+      <img src="images/gpu_comparison.jpg" alt="GPU Comparison Chart" class="transition-img">
+      
+      <!-- Date Information -->
+      <p>Date Produced: May, 2025 | Date Deployed: May 8, 2025</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Ben Brown | <a href="https://github.com/browntown06">GitHub</a></p>
+    <p><a href="contact.html">Leave a Comment</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slicknav/1.0.10/jquery.slicknav.min.js"></script> <!-- SlickNav Plugin -->
+  <script>
+    // Initialize SlickNav for responsive navigation
+    $(function(){
+      $('#menu ul').slicknav();
+    });
+  </script>
+</body>
+</html>

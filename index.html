@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A beginner-friendly guide to building a PC, covering GPUs, CPUs, resources, and more." />
+  <meta name="author" content="Ben Brown" />
+  <meta name="date" content="2025-05-08" />
+  
+  <!-- Page Title -->
+  <title>Simple PC Build Guide</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="normalize.css"> <!-- Normalize CSS for consistent styling -->
+  <link rel="stylesheet" href="styling/styles.css" /> <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styling/print.css" media="print" /> <!-- Print-specific styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slicknav/1.0.10/slicknav.min.css"> <!-- SlickNav for responsive navigation -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio autoplay loop hidden>
+    <source src="audio/boogie.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <!-- Header Section -->
+  <header>
+    <h1>Simple PC Build Guide</h1>
+    <nav id="menu">
+      <ul>
+        <!-- Navigation Links -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gpus.html">AMD vs Nvidia</a></li>
+        <li><a href="cpus.html">AMD vs Intel</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="buy.html">Where to Buy</a></li>
+        <li><a href="contact.html">Questions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <!-- Welcome Section -->
+      <h2>Welcome to Your First PC Build!</h2>
+      <p>This site is your beginner-friendly guide to choosing the right parts and understanding the basics of building your own computer.</p>
+      
+      <!-- Introductory Video -->
+      <video controls autoplay muted width="100%">
+        <source src="videos/build_intro.mp4" type="video/mp4">
+        <source src="videos/build_intro.webm" type="video/webm">
+        Your browser does not support the video tag.
+      </video>
+      
+      <!-- Two-Column Layout -->
+      <div class="two-column">
+        <div>
+          <!-- Quick Links Section -->
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="gpus.html">!! GPU Comparison !!</a></li>
+            <li><a href="cpus.html">!! CPU Comparison !!</a></li>
+            <li><a href="contact.html">!! Questions !!</a></li>
+          </ul>
+        </div>
+        <div class="image-container">
+          <!-- Example Image -->
+          <img src="images/pc_build.jpg" alt="PC Build Example" class="transition-img">
+        </div>
+      </div>
+      
+      <!-- Footer Information -->
+      <p>Date Produced: May, 2025 | Date Deployed: May 8, 2025</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Ben Brown | <a href="https://github.com/browntown06">GitHub</a></p>
+    <p><a href="contact.html">Leave a Comment</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slicknav/1.0.10/jquery.slicknav.min.js"></script> <!-- SlickNav Plugin -->
+  <script>
+    // Initialize SlickNav for responsive navigation
+    $(function(){
+      $('#menu ul').slicknav();
+    });
+  </script>
+</body>
+</html>

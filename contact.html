@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Meta Information -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact form for submitting questions and feedback about building a PC." />
+  <meta name="author" content="Ben Brown" />
+  <meta name="date" content="2025-05-08" />
+  
+  <!-- Page Title -->
+  <title>Questions - Simple PC Build Guide</title>
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="normalize.css"> <!-- Normalize CSS for consistent styling -->
+  <link rel="stylesheet" href="styling/styles.css" /> <!-- Main stylesheet -->
+  <link rel="stylesheet" href="styling/print.css" media="print" /> <!-- Print-specific styles -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slicknav/1.0.10/slicknav.min.css"> <!-- SlickNav for responsive navigation -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> <!-- Google Fonts -->
+</head>
+<body>
+
+  <!-- Background Music -->
+  <audio autoplay loop hidden>
+    <source src="audio/boogie.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+  
+  <!-- Header Section -->
+  <header>
+    <h1>Simple PC Build Guide</h1>
+    <nav id="menu">
+      <ul>
+        <!-- Navigation Links -->
+        <li><a href="index.html">Home</a></li>
+        <li><a href="gpus.html">AMD vs Nvidia</a></li>
+        <li><a href="cpus.html">AMD vs Intel</a></li>
+        <li><a href="resources.html">Resources</a></li>
+        <li><a href="buy.html">Where to Buy</a></li>
+        <li><a href="contact.html">Questions</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <section>
+      <!-- Contact Form Section -->
+      <h2>Have Questions?</h2>
+      <p>If you have more detailed questions or comments, feel free to use the form below. Your input is always welcome!</p>
+      
+      <!-- Contact Form -->
+      <form action="thankyou.html" method="GET">
+        <!-- First Name Field -->
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="fname" required>
+
+        <!-- Last Name Field -->
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="lname" required>
+
+        <!-- Email Field -->
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
+
+        <!-- Comments Field -->
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" rows="5" required></textarea>
+
+        <!-- Form Buttons -->
+        <div class="form-buttons">
+          <input type="reset" value="Reset"> <!-- Reset Button -->
+          <input type="submit" value="Submit"> <!-- Submit Button -->
+        </div>
+      </form>
+      
+      <!-- Date Information -->
+      <p>Date Produced: May, 2025 | Date Deployed: May 8, 2025</p>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>&copy; 2025 Ben Brown | <a href="https://github.com/browntown06">GitHub</a></p>
+    <p><a href="contact.html">Leave a Comment</a></p>
+  </footer>
+
+  <!-- JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script> <!-- jQuery Library -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slicknav/1.0.10/jquery.slicknav.min.js"></script> <!-- SlickNav Plugin -->
+  <script>
+    // Initialize SlickNav for responsive navigation
+    $(function(){
+      $('#menu ul').slicknav();
+    });
+  </script>
+</body>
+</html>
